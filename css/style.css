@@ -58,7 +58,10 @@ header h3 {
     top: 50%;
     font-size: 200%;
     color: blue;
+    padding: .25em;
+    border-radius: 50vh;
     transform: translateY(-50%);
+    transition: all ease-in-out 300ms;
 }
 
 .last {
@@ -67,6 +70,39 @@ header h3 {
 
 .next {
     right: 15px;
+}
+
+.last:hover, .next:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.dots {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 9px;
+}
+
+.dot {
+    width: 10px;
+    aspect-ratio: 1;
+    background-color: silver;
+    border-radius: 50vh;
+    cursor: pointer;
+}
+
+.active {
+    background-color: gold;
+}
+
+.fadeout {
+    animation: fade 2000ms;
+}
+
+@keyframes fade {
+    from {opacity: .2;}
+    to {opacity: 1;}
 }
 
 
