@@ -30,3 +30,7 @@ function showImage(i) {
     theImages[intIndex].style.display = "block";
     theDots[intIndex].className += " active"
 }
+
+setInterval(() => {
+    showImage(1);
+}, 5000);

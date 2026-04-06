@@ -115,3 +115,17 @@ footer {
     border-top: 3px ridge silver;
     margin-top: 2em;
 }
+
+@media (max-width: 800px) {
+  .imagecarousel img {
+    max-width: 100%;
+    border-radius: 0%;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
+  }
+}
